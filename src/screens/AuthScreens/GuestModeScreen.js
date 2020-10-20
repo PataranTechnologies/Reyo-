@@ -3,9 +3,9 @@ import { View, StyleSheet, Text, Modal } from 'react-native';
 import CustomHeader from '../../navigations/CustomHeader';
 import CustomInput from '../../components/CustomInput';
 import { TextInput } from 'react-native-gesture-handler';
-import BlackButton from '../../components/BlackButton';
-import SimpleButton from '../../components/SimpleButton';
 
+import SimpleButton from '../../components/SimpleButton';
+import MainButton from '../../components/MainButton'
 
 const GuestModeScreen=(props)=>{
 
@@ -35,7 +35,7 @@ const GuestModeScreen=(props)=>{
     <Text style={styles.text}>Please Signup to proceed further.{'\n'}if you are an existing user{'\n'}please login </Text>
 
 
-<BlackButton title="Signin" onPress={()=>{onSubmit()}} />
+<MainButton title="Signin" onPress={()=>{onSubmit()}} />
 
 <SimpleButton title='Signup' />
 

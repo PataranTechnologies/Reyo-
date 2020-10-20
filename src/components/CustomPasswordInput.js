@@ -25,8 +25,9 @@ const CustomInput=(props)=>{
 const styles=StyleSheet.create({
 
     input:{
-        borderColor:'#DCDCDC',
-        borderWidth:1,
+        
+        borderBottomColor:'#DCDCDC',
+        borderBottomWidth:1,
 
         borderRadius:5,
         marginTop:5,
@@ -39,11 +40,12 @@ const styles=StyleSheet.create({
         fontSize:25,
         position:"absolute",
         right:10,
+        color:'gray'
     },
     inputField:{
         padding:10,
         flex:1,
-        paddingLeft:20,
+        paddingLeft:0,
 
     },
 

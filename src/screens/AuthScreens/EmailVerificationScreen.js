@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View ,StyleSheet, Image, Text, ImagePropTypes, Modal} from 'react-native';
-import BlackButton from '../../components/BlackButton';
+import MainButton from '../../components/MainButton'
 
 
 
@@ -23,7 +23,7 @@ const EmailVerificationScreen=(props)=>{
 <Text style={styles.text}> An Email with Verification Link is Sent{'\n'}to your account.Please verify{'\n'}to login</Text>
 
 
-<BlackButton title='Ok' onPress={()=>{backToSignUpScreen()}} />
+<MainButton title='Ok' onPress={()=>{backToSignUpScreen()}} />
 
 
                 </View>

@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import BlackButton from '../../components/BlackButton';
+import MainButton from '../../components/MainButton'
 import SimpleButton from '../../components/SimpleButton'
-
-
+import OrangeButton from '../../components/OrangeButon'
+import {connect} from 'react-redux'
+import * as Actions from '../../reyuRedux/actions'
 const SignUpOptionScreen=(props)=>{
 
     const asUser=()=>{
-        
+        props.setUserType(1);
 props.navigation.navigate("SignUpScreen")
     }
     const asVendor=()=>{
 
-
+props.setUserType(2);
 props.navigation.navigate("SignUpScreen")
 
     }
@@ -26,9 +27,9 @@ props.navigation.navigate("SignUpScreen")
                 <Text style={styles.header}>Sign Up</Text>
     <Text style={styles.text}>Lorem ipsum dolor sit amet consectetur{'\n'}adipiscing slit,sed do eiusmod tempor incidunt</Text>
 
-<BlackButton title='As a User' onPress={()=>asUser()} />
+<OrangeButton title='As a User' onPress={()=>asUser()} />
 <View style={{margin:5,}}></View>
-<SimpleButton title='As a Vendor' onPress={()=>asVendor()} />
+<MainButton title='As a Vendor' onPress={()=>asVendor()} />
 
                 </View>
 
@@ -68,5 +69,10 @@ const styles=StyleSheet.create({
         marginBottom:25,
     },
 })
-
-export default SignUpOptionScreen
+const mapStateToProps=(state)=>({
+    
+})
+const mapDispachToProps=(dispatch)=>({
+    setUserType:(payload)=>dispatch(Actions.setUserType(payload))
+})
+export default connect(mapStateToProps,mapDispachToProps)(SignUpOptionScreen)

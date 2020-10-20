@@ -26,14 +26,14 @@ const styles=StyleSheet.create({
 
        
         height:55,
-        borderRadius:10,
+        borderRadius:30,
         justifyContent:'center',
         alignItems:'center',
         alignSelf:'center',
         width:'100%',
         marginLeft:5,
         marginRight:5,
-        borderColor:'black',
+        borderColor:'#ff9933',
         borderWidth:2,
         marginTop:10,
        

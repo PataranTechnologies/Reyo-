@@ -8,6 +8,10 @@ target 'reyoClient' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
+
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
   target 'reyoClientTests' do
     inherit! :complete
     # Pods for testing

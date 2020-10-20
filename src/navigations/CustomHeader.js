@@ -5,14 +5,21 @@ import  Icon  from 'react-native-vector-icons/Ionicons';
 const CustomHeader=(props)=>{
 
     const onBack=()=>{
+
+        if(props.nonNavigationHeader===true)
+        {
+         props.back();
+        }
+        else
+        {
         props.navigation.goBack(null);
-    }
+    }}
     return (
 
         <View style={styles.container}>
 
             
-           <Icon onPress={()=>{onBack()}} style={styles.backIcon} name='chevron-back' /> 
+           <Icon onPress={()=>{onBack()}} style={styles.backIcon} name='arrow-back' /> 
     <Text style={styles.title}>{props.title}</Text>
 
 
@@ -35,7 +42,7 @@ backIcon:{
     fontSize:35,
 },
 title:{
-    fontSize:22,
+    fontSize:21,
 },
 })
 

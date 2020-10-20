@@ -19,10 +19,10 @@ const CustomInput=(props)=>{
 const styles=StyleSheet.create({
 
     input:{
-        borderColor:'#DCDCDC',
-        borderWidth:1,
+        borderBottomColor:'#DCDCDC',
+        borderBottomWidth:1,
         padding:10,
-        paddingLeft:20,
+        paddingLeft:0,
         borderRadius:5,
         marginTop:5,
         marginBottom:5,

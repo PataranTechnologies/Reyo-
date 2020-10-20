@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View,Text, StyleSheet } from 'react-native';
 
 import Swiper from 'react-native-swiper'
-import BlackButton from '../../components/BlackButton';
+import MainButton from '../../components/MainButton'
 import SimpleButton from '../../components/SimpleButton'
 import { Image } from 'react-native-animatable';
 const AuthMain=(props)=>{
@@ -43,7 +43,7 @@ const AuthMain=(props)=>{
           
 
 
-            <BlackButton title='Sign up' onPress={()=>{onSignUp()}} />
+            <MainButton title='Sign up' onPress={()=>{onSignUp()}} />
 
 
             <SimpleButton title='Skip' onPress={()=>{onSkip()}} />

@@ -14,13 +14,19 @@ const CustomLoginButton=(props)=>{
     const google=<AntDesign style={styles.gicon} name='google' />
   
     const facebookStyle={
-        backgroundColor:'blue',
+        borderColor:'#99ccff',
+        borderWidth:1,
+        backgroundColor:'white',
         flex:1,
+        borderRadius:30,
      
         
     }
     const appleStyle={
-        backgroundColor:'black',
+       borderColor:'black',
+       borderWidth:1,
+       borderRadius:30,
+       backgroundColor:'white',
         flex:1,
       
 
@@ -30,6 +36,7 @@ const CustomLoginButton=(props)=>{
         borderColor:'black',
         borderWidth:1,
         flex:1,
+        borderRadius:30,
         
       
     }
@@ -97,12 +104,12 @@ const styles=StyleSheet.create({
     },
      ficon:{
        
-        color:'white',
+        color:'#00ace6',
         fontSize:22,
      },
      aicon:{
 
-        color:"white",
+        color:"black",
         fontSize:22,
 
     },

@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Modal } from 'react-native';
 import CustomHeader from '../../navigations/CustomHeader';
 import CustomInput from '../../components/CustomInput';
 import { TextInput } from 'react-native-gesture-handler';
-import BlackButton from '../../components/BlackButton';
+import MainButton from '../../components/MainButton'
 import SimpleButton from '../../components/SimpleButton';
 
 
@@ -35,7 +35,7 @@ const LocationScreen=(props)=>{
     <Text style={styles.text}>Please Enable Location to Proceed{'\n'}further</Text>
 
 
-<BlackButton title="Enable Location" onPress={()=>{onSubmit()}} />
+<MainButton title="Enable Location" onPress={()=>{onSubmit()}} />
 
 <SimpleButton title='Not Now' onPress={()=>{onSubmit()}} />
 
